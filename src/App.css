@@ -1,0 +1,33 @@
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --accent-light-blue: #2969ff;
+  --background-primary: #282842;
+  --background-secondary: #181834;
+  --background-light: #3b3b73;
+  --text-gray: #cecece; 
+}
+
+
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+button {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:active {
+  transform: scale(0.97);
+}

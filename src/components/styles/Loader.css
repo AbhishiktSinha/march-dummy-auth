@@ -1,0 +1,47 @@
+.loader-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff1d;
+    backdrop-filter: blur(1px);
+
+    .spinner {
+        width: 100px;
+        min-width: 100px;
+        aspect-ratio: 1;
+
+
+        border-top: 12px solid var(--accent-light-blue);
+        border-right: 12px solid var(--accent-light-blue);
+        border-left: 12px solid var(--accent-light-blue);
+        border-bottom: 12px solid transparent;
+
+        border-radius: 50%;
+
+        animation-name: loaderSpin;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+}
+
+@keyframes loaderSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
